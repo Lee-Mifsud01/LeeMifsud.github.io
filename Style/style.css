@@ -15,7 +15,6 @@ body {
   background: transparent;
 }
 
-
 .site-logo {
   height: 42px;
   width: auto;
@@ -54,11 +53,35 @@ body {
   margin-bottom: 110px;
 }
 
+.project-carousel {
+  width: 100%;
+  height: 350px;
+  overflow: hidden;
+  background: #d9d9d9;
+  border-radius: 2px;
+}
+
+.project-carousel .carousel-inner,
+.project-carousel .carousel-item {
+  width: 100%;
+  height: 100%;
+}
+
 .project-image {
   width: 100%;
-  height: 420px;
+  height: 100%;
   object-fit: cover;
   display: block;
+}
+
+/* Use this for mobile app screenshots */
+.mobile-image {
+  width: auto;
+  max-width: 300px;
+  height: 100%;
+  object-fit: cover;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .project-content {
@@ -105,8 +128,12 @@ body {
     padding-top: 24px;
   }
 
-  .project-image {
+  .project-carousel {
     height: 320px;
+  }
+
+  .mobile-image {
+    max-width: 260px;
   }
 
   .project-item {
@@ -119,7 +146,11 @@ body {
     font-size: 1.5rem;
   }
 
-  .project-image {
+  .project-carousel {
     height: 240px;
+  }
+
+  .mobile-image {
+    max-width: 190px;
   }
 }
