@@ -7,6 +7,19 @@ body {
 
 /* Header */
 
+/* Hamburger menu for when user is on phone */
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2813, 110, 253, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
 .site-header {
   background: #e4e4e4;
   padding: 13px 0;
@@ -180,7 +193,116 @@ body {
   opacity: 1;
 }
 
+/* About me CSS */
+
+.about-section {
+  padding: 80px 0 100px;
+}
+
+.about-row {
+  min-height: 70vh;
+}
+
+.about-content {
+  max-width: 560px;
+}
+
+.section-label {
+  display: inline-block;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #0d6efd;
+  margin-bottom: 16px;
+}
+
+.about-title {
+  font-size: clamp(2.2rem, 5vw, 4.2rem);
+  font-weight: 800;
+  line-height: 1.05;
+  margin-bottom: 24px;
+  color: #111;
+}
+
+.about-text {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #333;
+  margin-bottom: 18px;
+}
+
+.about-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 28px;
+}
+
+.about-tags span {
+  background: rgba(255, 255, 255, 0.8);
+  color: #111;
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, background 0.2s ease, color 0.2s ease;
+}
+
+.about-tags span:hover {
+  transform: rotate(2deg) translateY(-4px);
+  background: #2563eb;
+  color: white;
+}
+
+.about-image-wrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.about-image-card {
+  width: min(380px, 100%);
+  background: white;
+  padding: 14px;
+  border-radius: 28px;
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.16);
+  transform: rotate(2deg);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.about-image-card:hover {
+  transform: rotate(0deg) translateY(-6px);
+  box-shadow: 0 24px 55px rgba(0, 0, 0, 0.22);
+}
+
+.about-image {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  display: block;
+  border-radius: 20px;
+  transform: rotate(-2deg);
+}
+
 @media (max-width: 991.98px) {
+  .about-section {
+    padding: 50px 0 80px;
+  }
+
+  .about-content {
+    max-width: 100%;
+  }
+
+  .about-image-wrapper {
+    justify-content: center;
+    margin-top: 45px;
+  }
+
+  .about-image-card {
+    width: min(320px, 100%);
+  }
+
   .project-content {
     padding-left: 0;
     padding-top: 24px;
@@ -192,6 +314,18 @@ body {
 }
 
 @media (max-width: 575.98px) {
+  .about-title {
+    font-size: 2.2rem;
+  }
+
+  .about-text {
+    font-size: 1rem;
+  }
+
+  .about-tags span {
+    font-size: 0.82rem;
+  }
+
   .project-title {
     font-size: 1.5rem;
   }
