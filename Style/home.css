@@ -194,8 +194,8 @@
 
 /* Noticeboard carousel */
 .noticeboard-carousel {
-  height: 420px;
-  background: #d9d9d9;
+  height: 430px;
+  background: #ffffff;
 }
 
 .noticeboard-carousel-image {
@@ -203,7 +203,7 @@
   height: 100%;
   object-fit: contain;
   object-position: center;
-  background: #d9d9d9;
+  background: #ffffff;
 }
 
 .project-content {
