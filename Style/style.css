@@ -18,7 +18,7 @@ body {
   right: -100px;
   width: 320px;
   height: 320px;
-  background: rgba(13, 110, 253, 0.13);
+  background: rgba(13, 109, 253, 0.295);
   border-radius: 50%;
   filter: blur(22px);
   z-index: -1;
@@ -31,7 +31,7 @@ body {
   left: -120px;
   width: 300px;
   height: 300px;
-  background: rgba(13, 110, 253, 0.11);
+  background: rgba(13, 109, 253, 0.295);
   border-radius: 50%;
   filter: blur(20px);
   z-index: -1;
@@ -39,11 +39,26 @@ body {
 
 .home-bg-shape {
   position: absolute;
-  background: rgba(13, 110, 253, 0.10);
+  background: rgba(13, 109, 253, 0.295);
   border-radius: 50%;
-  filter: blur(18px);
+  filter: blur(15px);
   z-index: -1;
   pointer-events: none;
+  animation: floatingShape 8s ease-in-out infinite;
+}
+
+@keyframes floatingShape {
+  0% {
+    transform: translate(0, 0) scale(1);
+  }
+
+  50% {
+    transform: translate(50px, -50px) scale(1.08);
+  }
+
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
 }
 
 .home-bg-shape-one {
@@ -51,6 +66,8 @@ body {
   left: 8%;
   width: 180px;
   height: 180px;
+  animation-duration: 4s;
+  background: rgba(13, 109, 253, 0.295);
 }
 
 .home-bg-shape-two {
@@ -58,7 +75,9 @@ body {
   right: 10%;
   width: 230px;
   height: 230px;
-  background: rgba(13, 110, 253, 0.10);
+  background: rgba(13, 109, 253, 0.295);
+  animation-duration: 5s;
+  animation-delay: 1s;
 }
 
 .home-bg-shape-three {
@@ -66,6 +85,9 @@ body {
   left: 18%;
   width: 260px;
   height: 260px;
+  background: rgba(13, 109, 253, 0.295);
+  animation-duration: 6s;
+  animation-delay: 0.5s;
 }
 
 .home-bg-shape-four {
@@ -73,7 +95,9 @@ body {
   right: 22%;
   width: 170px;
   height: 170px;
-  background: rgba(13, 110, 253, 0.10);
+  background: rgba(13, 109, 253, 0.295);
+  animation-duration: 3s;
+  animation-delay: 1.5s;
 }
 
 /* Header */
