@@ -323,22 +323,22 @@
     padding-top: 30px;
   }
 
-  .home-bg-shape {
+  .bg-shape {
     opacity: 0.6;
   }
 
-  .home-bg-shape-one {
+  .bg-shape-one {
     top: 300px;
     left: -40px;
   }
 
-  .home-bg-shape-two {
+  .bg-shape-two {
     top: 760px;
     right: -60px;
   }
 
-  .home-bg-shape-three,
-  .home-bg-shape-four {
+  .bg-shape-three,
+  .bg-shape-four {
     display: none;
   }
 
