@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lee Mifsud | Mobile App</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+
+    <link rel="icon" type="image/png" href="Images/Favicon7.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="Style/style.css">
+    <link rel="stylesheet" href="Style/projectpages.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+                <div class="container-fluid px-0">
+                    <a class="navbar-brand logo-link" href="index.html">
+                        <img src="Images/Logo.png" alt="Logo" class="site-logo">
+                    </a>
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                    aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="mainNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">About Me</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="project-detail-section mobile-app-page">
+        <div class="container">
+
+            <div class="project-detail-header">
+                <div class="section-label">Mobile App, UI/UX</div>
+                <h1 class="project-detail-title">Mobile App Project</h1>
+
+                <p class="project-detail-intro">
+                    This project is a mobile application concept focused on simple navigation,
+                    clear screen layouts, and a user-friendly experience. The aim of the project
+                    was to design an app that presents useful information in a clean and organised way.
+                </p>
+            </div>
+
+            <div class="app-detail-showcase">
+                <div class="app-phone-row">
+
+                    <div class="app-phone-frame">
+                        <img src="Images/MobileAppHome.png" alt="Mobile app home screen" onclick="openImageModal(this.src, this.alt)">
+                    </div>
+
+                    <div class="app-phone-frame">
+                        <img src="Images/MobileAppCalendar.png" alt="Mobile app calendar screen" onclick="openImageModal(this.src, this.alt)">
+                    </div>
+
+                    <div class="app-phone-frame">
+                        <img src="Images/MobileAppInternships.png" alt="Mobile app internships screen" onclick="openImageModal(this.src, this.alt)">
+                    </div>
+
+                    <div class="app-phone-frame">
+                        <img src="Images/MobileAppTimetable.png" alt="Mobile app timetable screen" onclick="openImageModal(this.src, this.alt)">
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="row project-info-row">
+                <div class="col-lg-6">
+                    <div class="project-info-card">
+                        <br>
+                        <h2>Project Overview</h2>
+                        <p>
+                            The mobile app was designed to organise important information into
+                            clear and easy-to-read sections. The project focuses on mobile usability,
+                            visual hierarchy, spacing, and making each screen simple for the user to understand.
+                        </p>
+                        <br>
+                        <br>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="project-info-card">
+                        <h2>Key Features</h2>
+                        <ul class="project-detail-list">
+                            <li>Mobile-first interface design</li>
+                            <li>Clear home screen layout</li>
+                            <li>Calendar section</li>
+                            <li>Internship information section</li>
+                            <li>Timetable screen</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-info-card">
+                <h2>Design Process</h2>
+                <p>
+                    The design process focused on making the app easy to use on a smaller screen.
+                    Each screen was planned with clear spacing, readable content, and simple navigation.
+                    This helped the app feel less crowded while still presenting the user with useful information.
+                </p>
+            </div>
+
+            <div class="project-info-card">
+                <h2>What I Learned</h2>
+                <p>
+                    This project helped develop a better understanding of mobile UI design,
+                    especially how layout, spacing, and visual consistency affect the user's experience.
+                    It also showed the importance of designing screens that are simple, direct, and easy to follow.
+                </p>
+            </div>
+
+            <br>
+            <a href="index.html" class="back-link"><- Back to projects</a>
+
+        </div>
+    </section>
+
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content image-modal-content">
+                <button type="button" class="btn-close image-modal-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                <div class="modal-body text-center">
+                    <img id="modalImage" src="" alt="" class="modal-image">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        function openImageModal(imageSrc, imageAlt) {
+            const modalImage = document.getElementById("modalImage");
+            modalImage.src = imageSrc;
+            modalImage.alt = imageAlt;
+
+            const imageModal = new bootstrap.Modal(document.getElementById("imageModal"));
+            imageModal.show();
+        }
+    </script>
+
+</body>
+</html>

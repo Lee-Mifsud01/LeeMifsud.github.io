@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lee Mifsud | Interactive Noticeboard</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+
+    <link rel="icon" type="image/png" href="Images/Favicon7.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="Style/style.css">
+    <link rel="stylesheet" href="Style/projectpages.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+                <div class="container-fluid px-0">
+                    <a class="navbar-brand logo-link" href="index.html">
+                        <img src="Images/Logo.png" alt="Logo" class="site-logo">
+                    </a>
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                    aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="mainNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">About Me</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="project-detail-section noticeboard-page">
+        <div class="container">
+
+            <div class="project-detail-header">
+                <div class="section-label">Interactive Design, UI/UX</div>
+                <h1 class="project-detail-title">Interactive Noticeboard</h1>
+
+                <p class="project-detail-intro">
+                    This project is an interactive noticeboard designed to present important
+                    information in a clear and accessible way. The project focuses on usability,
+                    readable content, and simple interaction so users can quickly find the notices
+                    or updates they need.
+                </p>
+            </div>
+
+            <div class="noticeboard-hero">
+                <img src="Images/Noticeboard/Home.png" alt="Interactive noticeboard main screen" onclick="openImageModal(this.src, this.alt)">
+            </div>
+
+            <div class="row project-info-row">
+                <div class="col-lg-6">
+                    <div class="project-info-card">
+                        <h2>Project Overview</h2>
+                        <p>
+                            The interactive noticeboard was created to organise information into
+                            clear sections. The aim was to make the interface easy to understand,
+                            allowing users to quickly scan notices, updates, and important content
+                            without feeling overwhelmed.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="project-info-card">
+                        <h2>Key Features</h2>
+                        <ul class="project-detail-list">
+                            <li>Clear notice layout</li>
+                            <li>Simple interactive sections</li>
+                            <li>Easy-to-read information display</li>
+                            <li>Organised content categories</li>
+                            <li>User-friendly visual structure</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-info-card">
+                <h2>Interactive Elements</h2>
+                <p>
+                    The project includes interactive elements that help users engage with the noticeboard
+                    instead of only viewing static information. The design supports quick navigation,
+                    clear content grouping, and a more engaging way to access updates or announcements.
+                </p>
+            </div>
+
+            <div class="project-info-card">
+                <h2>Design Process</h2>
+                <p>
+                    The design process focused on creating a layout that feels clean, structured, and easy
+                    to use. Since noticeboards often contain a lot of information, the interface was designed
+                    with strong spacing, readable text areas, and clear sections to improve usability.
+                </p>
+            </div>
+
+            <div class="project-gallery noticeboard-gallery">
+                <h2 class="project-gallery-title">Project Screens</h2>
+
+                <div class="noticeboard-gallery-grid">
+                    <img src="Images/Noticeboard/Home.png" alt="Noticeboard home screen" onclick="openImageModal(this.src, this.alt)">
+                    <img src="Images/Noticeboard/Notices.png" alt="Noticeboard notices screen" onclick="openImageModal(this.src, this.alt)">
+                    <img src="Images/Noticeboard/Events.png" alt="Noticeboard events screen" onclick="openImageModal(this.src, this.alt)">
+                    <img src="Images/Noticeboard/Information.png" alt="Noticeboard information screen" onclick="openImageModal(this.src, this.alt)">
+                </div>
+            </div>
+
+            <br>
+            <a href="index.html" class="back-link"><- Back to projects</a>
+
+        </div>
+    </section>
+
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content image-modal-content">
+                <button type="button" class="btn-close image-modal-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                <div class="modal-body text-center">
+                    <img id="modalImage" src="" alt="" class="modal-image">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        function openImageModal(imageSrc, imageAlt) {
+            const modalImage = document.getElementById("modalImage");
+            modalImage.src = imageSrc;
+            modalImage.alt = imageAlt;
+
+            const imageModal = new bootstrap.Modal(document.getElementById("imageModal"));
+            imageModal.show();
+        }
+    </script>
+
+</body>
+</html>
