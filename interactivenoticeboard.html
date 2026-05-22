@@ -14,6 +14,7 @@
 
     <link rel="stylesheet" href="Style/style.css">
     <link rel="stylesheet" href="Style/projectpages.css">
+    <link rel="stylesheet" href="Style/home.css">
 </head>
 <body>
 
@@ -46,6 +47,10 @@
     </header>
 
     <section class="project-detail-section noticeboard-page">
+        
+        <div class="bg-shape bg-shape-one"></div>
+        <div class="bg-shape bg-shape-three"></div>
+        <div class="bg-shape bg-shape-four"></div>
         <div class="container">
 
             <div class="project-detail-header">
@@ -60,16 +65,36 @@
                 </p>
             </div>
 
-            <div class="project-gallery noticeboard-gallery">
-                <h2 class="project-gallery-title">Project Screens</h2>
-
-                <div class="noticeboard-gallery-grid">
+            <div class="noticeboard-showcase">
+                <div class="noticeboard-feature-image">
+                        <div class="noticeboard-preview-text">
+                            <span>Main Page</span>
+                            <h3>Home</h3>
+                        </div>
                     <img src="Images/InteractiveNoticeBoard/Home.png" alt="Noticeboard home screen" onclick="openImageModal(this.src, this.alt)">
-                    <img src="Images/InteractiveNoticeBoard/Menu.png" alt="Noticeboard notices screen" onclick="openImageModal(this.src, this.alt)">
-                    <img src="Images/InteractiveNoticeBoard/Handbook.png" alt="Noticeboard events screen" onclick="openImageModal(this.src, this.alt)">
+                </div>
+
+                <div class="noticeboard-preview-row">
+                    <div class="noticeboard-preview-card">
+                        <div class="noticeboard-preview-text">
+                            <span>Navigation</span>
+                            <h3>Food Menu</h3>
+                        </div>
+
+                        <img src="Images/InteractiveNoticeBoard/Menu.png" alt="Noticeboard menu screen" onclick="openImageModal(this.src, this.alt)">
+                    </div>
+
+                    <div class="noticeboard-preview-card">
+                        <div class="noticeboard-preview-text">
+                            <span>Information</span>
+                            <h3>Handbook Section</h3>
+                        </div>
+
+                        <img src="Images/InteractiveNoticeBoard/Handbook.png" alt="Noticeboard handbook screen" onclick="openImageModal(this.src, this.alt)">
+                    </div>
                 </div>
             </div>
-            <br>
+
             <div class="row project-info-row">
                 <div class="col-lg-6">
                     <div class="project-info-card">
