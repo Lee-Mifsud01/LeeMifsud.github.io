@@ -63,9 +63,7 @@ a {
 }
 
 
-/* ==========================================================
-   WEBSITE CONTROLS
-========================================================== */
+/* WEBSITE CONTROLS */
 
 .cv-controls {
     width: var(--page-width);
@@ -768,7 +766,7 @@ a {
 
 @page {
     size: A4;
-    margin: 0;
+    margin: 12mm 0 0 0;
 }
 
 @media print {
@@ -796,7 +794,7 @@ a {
 
         margin: 0;
 
-        padding: 12mm 14mm 8mm;
+        padding: 0mm 14mm 8mm;
 
         box-shadow: none;
     }
