@@ -1,179 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lee Mifsud | Interactive Noticeboard</title>
-
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
-
     <link rel="icon" type="image/png" href="Images/Favicon7.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="Style/style.css">
     <link rel="stylesheet" href="Style/projectpages.css">
-    <link rel="stylesheet" href="Style/home.css">
-</head>
-<body>
+    <title>Lee Mifsud | MCAST Interactive Noticeboard</title>
+  </head>
 
+  <body>
     <header class="site-header">
-        <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
-                <div class="container-fluid px-0">
-                    <a class="navbar-brand logo-link" href="index.html">
-                        <img src="Images/Logo.png" alt="Logo" class="site-logo">
-                    </a>
-
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
-                    aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-
-                    <div class="collapse navbar-collapse" id="mainNav">
-                        <ul class="navbar-nav ms-auto">
-                            <li class="nav-item">
-                                <a class="nav-link" href="index.html">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="about.html">About Me</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </div>
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+          <div class="container-fluid px-0">
+            <a class="navbar-brand logo-link" href="index.html"><img src="Images/LogoTest.png" alt="Lee Mifsud logo" class="site-logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="mainNav">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About Me</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
     </header>
 
-    <section class="project-detail-section noticeboard-page">
-        
-        <div class="bg-shape bg-shape-one"></div>
-        <div class="bg-shape bg-shape-three"></div>
-        <div class="bg-shape bg-shape-four"></div>
+    <main>
+      <section class="project-detail-section project-page-shell">
+        <span class="bg-orb orb-a"></span><span class="bg-orb orb-b"></span><span class="bg-orb orb-c"></span>
         <div class="container">
+          <div class="case-back-row reveal">
+            <a href="index.html#projects" class="back-link">← Back to projects</a>
+            <span class="case-progress-label">Project 3 | Interactive display</span>
+          </div>
 
-            <div class="project-detail-header">
-                <div class="section-label">Interactive Design, UI/UX</div>
-                <h1 class="project-detail-title">Interactive Noticeboard</h1>
+          <div class="case-hero">
+            <div class="case-hero-copy reveal">
+              <div class="section-label">Interactive Design · UI/UX · Campus information</div>
+              <h1 class="project-detail-title gradient-text">MCAST Interactive Noticeboard</h1>
+              <p class="project-detail-intro">An interactive noticeboard concept designed to help students quickly find campus information. 
+                The page now uses a more editorial layout with large visuals, angled sections and a clearer story of the design process.
+              </p>
+              <div class="project-meta">
+                <span>Interactive display</span>
+                <span>Information design</span>
+                <span>Student support</span>
+              </div>
 
-                <p class="project-detail-intro">
-                    This project is an interactive noticeboard designed to present important
-                    information in a clear and accessible way. The project focuses on usability,
-                    readable content, and simple interaction so users can quickly find the notices
-                    or updates they need.
-                </p>
-            </div>
-
-            <div class="noticeboard-showcase">
-                <div class="noticeboard-feature-image">
-                        <div class="noticeboard-preview-text">
-                            <span>Main Page</span>
-                            <h3>Home</h3>
-                        </div>
-                    <img src="Images/InteractiveNoticeBoard/Home.png" alt="Noticeboard home screen" onclick="openImageModal(this.src, this.alt)">
+              <div class="case-stats">
+                <div class="case-stat">
+                  <strong>3</strong>
+                  <span>Main interface screens</span>
                 </div>
-
-                <div class="noticeboard-preview-row">
-                    <div class="noticeboard-preview-card">
-                        <div class="noticeboard-preview-text">
-                            <span>Navigation</span>
-                            <h3>Food Menu</h3>
-                        </div>
-
-                        <img src="Images/InteractiveNoticeBoard/Menu.png" alt="Noticeboard menu screen" onclick="openImageModal(this.src, this.alt)">
-                    </div>
-
-                    <div class="noticeboard-preview-card">
-                        <div class="noticeboard-preview-text">
-                            <span>Information</span>
-                            <h3>Handbook Section</h3>
-                        </div>
-
-                        <img src="Images/InteractiveNoticeBoard/Handbook.png" alt="Noticeboard handbook screen" onclick="openImageModal(this.src, this.alt)">
-                    </div>
+                <div class="case-stat">
+                  <strong>Info</strong>
+                  <span>Clear content access</span>
                 </div>
-            </div>
-
-            <div class="row project-info-row">
-                <div class="col-lg-6">
-                    <div class="project-info-card">
-                        <br>
-                        <h2>Project Overview</h2>
-                        <p>
-                            The interactive noticeboard was created to organise information into
-                            clear sections. The aim was to make the interface easy to understand,
-                            allowing users to quickly scan notices, updates, and important content
-                            without feeling overwhelmed.
-                        </p>
-                        <br>
-                        <br>
-                    </div>
+                <div class="case-stat">
+                  <strong>UX</strong>
+                  <span>Large-screen interaction</span>
                 </div>
-
-                <div class="col-lg-6">
-                    <div class="project-info-card">
-                        <h2>Key Features</h2>
-                        <ul class="project-detail-list">
-                            <li>Clear notice layout</li>
-                            <li>Simple interactive sections</li>
-                            <li>Easy-to-read information display</li>
-                            <li>Organised content categories</li>
-                            <li>User-friendly visual structure</li>
-                        </ul>
-                    </div>
-                </div>
+              </div>
             </div>
 
-            <div class="project-info-card">
-                <h2>Interactive Elements</h2>
-                <p>
-                    The project includes interactive elements that help users engage with the noticeboard
-                    instead of only viewing static information. The design supports quick navigation,
-                    clear content grouping, and a more engaging way to access updates or announcements.
-                </p>
+            <div class="case-hero-visual reveal">
+              <div class="case-screen-card contain">
+                <img src="Images/InteractiveNoticeBoard/Home.png" alt="Interactive noticeboard home screen" onclick="openImageModal(this.src,this.alt)" loading="lazy" decoding="async">
+              </div>
+              <div class="floating-note"><span>Purpose</span>Help students find useful information without needing to ask around.</div>
+            </div>
+          </div>
+
+          <div class="notice-cascade reveal">
+            <div class="notice-large"><img src="Images/InteractiveNoticeBoard/Home.png" alt="Noticeboard home screen" onclick="openImageModal(this.src,this.alt)" loading="lazy" decoding="async"></div>
+            <div class="notice-small-stack">
+              <div class="notice-small"><img src="Images/InteractiveNoticeBoard/Menu.png" alt="Noticeboard food menu screen" onclick="openImageModal(this.src,this.alt)" loading="lazy" decoding="async"></div>
+              <div class="notice-small"><img src="Images/InteractiveNoticeBoard/Handbook.png" alt="Noticeboard handbook screen" onclick="openImageModal(this.src,this.alt)" loading="lazy" decoding="async"></div>
+            </div>
+          </div>
+
+          <div class="story-block">
+            <div class="story-panel offset-right reveal">
+              <div class="story-kicker">Project overview</div>
+              <h2>A digital noticeboard designed around quick understanding.</h2>
+              <p>The noticeboard groups student information into clear areas so users can quickly choose what they need. The project focuses on simple interaction, readable screens and a visual structure that works for a public display.</p>
+              <div class="feature-ribbon"><span>Home hub</span><span>Food menu</span><span>Handbook</span><span>Clear sections</span></div>
+            </div>
+          </div>
+
+          <div class="diagonal-feature">
+            <div class="visual-stack reveal">
+              <div class="visual-card contain one"><img src="Images/InteractiveNoticeBoard/Menu.png" alt="Food menu screen" onclick="openImageModal(this.src,this.alt)" loading="lazy" decoding="async"></div>
+              <div class="visual-card contain two"><img src="Images/InteractiveNoticeBoard/Handbook.png" alt="Handbook screen" onclick="openImageModal(this.src,this.alt)" loading="lazy" decoding="async"></div>
+              <div class="visual-card contain three"><img src="Images/InteractiveNoticeBoard/Home.png" alt="Home hub screen" onclick="openImageModal(this.src,this.alt)" loading="lazy" decoding="async"></div>
             </div>
 
-            <div class="project-info-card">
-                <h2>Design Process</h2>
-                <p>
-                    The design process focused on creating a layout that feels clean, structured, and easy
-                    to use. Since noticeboards often contain a lot of information, the interface was designed
-                    with strong spacing, readable text areas, and clear sections to improve usability.
-                </p>
+            <div class="story-panel reveal">
+              <div class="story-kicker">Interaction thinking</div>
+              <h2>Designed for scanning, tapping and moving on.</h2>
+              <p>A noticeboard should not require too much effort from the user. I kept the structure direct, with clear visual areas and a simple navigation idea that lets students recognise each section quickly.</p>
             </div>
+          </div>
 
-            <br>
-            <a href="index.html" class="back-link"><- Back to projects</a>
+          <div class="process-timeline">
+            <div class="process-step reveal"><div class="step-number">01</div><div class="process-card"><h2>Organise the content</h2><p>The first step was separating common campus information into simple categories, such as menu information and handbook content.</p></div></div>
+            <div class="process-step reveal"><div class="step-number">02</div><div class="process-card"><h2>Make the interface readable</h2><p>Large screen layouts need strong spacing and obvious labels. The design avoids crowded sections and gives each area breathing space.</p></div></div>
+            <div class="process-step reveal"><div class="step-number">03</div><div class="process-card"><h2>Present it as an experience</h2><p>The case study uses oversized visuals and offset explanation blocks so the project feels more like an interactive product presentation.</p></div></div>
+          </div>
 
+          <div class="next-projects reveal">
+            <p><strong>Back to all work:</strong> Return to the homepage to compare the full project selection.</p>
+            <a href="index.html#projects" class="back-link">All projects →</a>
+          </div>
         </div>
-    </section>
+      </section>
+    </main>
 
-    <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-xl">
-            <div class="modal-content image-modal-content">
-                <button type="button" class="btn-close image-modal-close" data-bs-dismiss="modal" aria-label="Close"></button>
-
-                <div class="modal-body text-center">
-                    <img id="modalImage" src="" alt="" class="modal-image">
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
-    <script>
-        function openImageModal(imageSrc, imageAlt) {
-            const modalImage = document.getElementById("modalImage");
-            modalImage.src = imageSrc;
-            modalImage.alt = imageAlt;
-
-            const imageModal = new bootstrap.Modal(document.getElementById("imageModal"));
-            imageModal.show();
-        }
-    </script>
-
-</body>
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true"><div class="modal-dialog modal-dialog-centered modal-xl"><div class="modal-content image-modal-content"><button type="button" class="btn-close image-modal-close" data-bs-dismiss="modal" aria-label="Close"></button><div class="modal-body text-center"><img id="modalImage" src="" alt="" class="modal-image"></div></div></div></div>
+    <footer class="site-footer"><div class="container footer-row"><span>© 2026 Lee Mifsud - Portfolio</span><div class="footer-links"><a href="index.html#projects">Projects</a><a href="about.html">About</a><a href="mailto:leemifsud01@gmail.com">Email</a></div></div></footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script><script src="script.js"></script>
+  </body>
 </html>

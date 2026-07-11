@@ -1,150 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lee Mifsud | GPU Vortex</title>
-
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
-
     <link rel="icon" type="image/png" href="Images/Favicon7.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="Style/style.css">
     <link rel="stylesheet" href="Style/projectpages.css">
-    </head>
-    <body>
+    <title>Lee Mifsud | GPU Vortex</title>
+  </head>
 
+  <body>
     <header class="site-header">
-        <div class="container">
+      <div class="container">
         <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
-            <div class="container-fluid px-0">
+          <div class="container-fluid px-0">
             <a class="navbar-brand logo-link" href="index.html">
-                <img src="Images/Logo.png" alt="Logo" class="site-logo">
+              <img src="Images/LogoTest.png" alt="Lee Mifsud logo" class="site-logo">
             </a>
-
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
-            aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
             </button>
-
             <div class="collapse navbar-collapse" id="mainNav">
-                <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="about.html">About Me</a>
-                </li>
-                </ul>
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About Me</a></li>
+              </ul>
             </div>
-            </div>
+          </div>
         </nav>
-        </div>
+      </div>
     </header>
 
-    <section class="project-detail-section">
-
-        <div class="bg-shape bg-shape-one"></div>
-        <div class="bg-shape bg-shape-three"></div>
-        <div class="bg-shape bg-shape-four"></div>
-        
+    <main>
+      <section class="project-detail-section project-page-shell">
+        <span class="bg-orb orb-a"></span>
+        <span class="bg-orb orb-b"></span>
+        <span class="bg-orb orb-c"></span>
         <div class="container">
-            <div class="project-detail-header">
+          <div class="case-back-row reveal">
+            <a href="index.html#projects" class="back-link">← Back to projects</a>
+            <span class="case-progress-label">Project 1 | Website</span>
+          </div>
 
-                <div class="section-label">Website, UI/UX</div>
-                <h1 class="project-detail-title">GPU Vortex</h1>
-
-                <p class="project-detail-intro">
-                This project is a responsive website focused on clear structure, strong visual layout,
-                and a simple user experience. The aim of the project was to create a polished website
-                that is easy to navigate and visually consistent across different pages.
-                </p>
+          <div class="case-hero">
+            <div class="case-hero-copy reveal">
+              <div class="section-label">Website · UI/UX · Product layout</div>
+              <h1 class="project-detail-title gradient-text">GPU Vortex</h1>
+              <p class="project-detail-intro">A technology-focused website concept built around product browsing, strong visual hierarchy and a clean user journey. 
+                The project is presented as a polished ecommerce-style experience rather than a static website exercise.</p>
+              <div class="project-meta">
+                <span>Responsive website</span><span>Product presentation</span><span>Clean UI system</span>
+              </div>
+              <div class="case-stats">
+                <div class="case-stat"><strong>5</strong><span>Main page screens</span></div>
+                <div class="case-stat"><strong>UI</strong><span>Layout and interaction focus</span></div>
+                <div class="case-stat"><strong>Web</strong><span>Desktop-first showcase</span></div>
+              </div>
             </div>
 
-            <img src="Images/GPUVortex/Home.png" alt="Project One main screen" class="project-hero-image">
+            <div class="case-hero-visual reveal">
+              <div class="case-screen-card">
+                <img src="Images/GPUVortex/Home.png" alt="GPU Vortex homepage" onclick="openImageModal(this.src,this.alt)" loading="lazy" decoding="async">
+              </div>
+              <div class="floating-note"><span>Goal</span>Make the website feel like a real technology brand.</div>
+            </div>
+          </div>
 
-            <div class="row">
-                <div class="col-lg-6">
-                <div class="project-info-card">
-                    <br>
-                    <br>
-                    <h2>Project Overview</h2>
-                    <p>
-                    The website was designed to present information in a clean and organised way.
-                    The project focuses on layout, navigation, spacing, responsive design, and
-                    creating a consistent visual style across the full website.
-                    </p>
-                    <br>
-                    <br>
-                </div>
-                </div>
+          <div class="story-block">
+            <div class="story-panel slim reveal">
+              <div class="story-kicker">Project overview</div>
+              <h2>Turning a simple site into a believable product experience.</h2>
+              <p>GPU Vortex presents gaming hardware through organised pages, strong imagery and a clear browsing structure. I focused on making each page feel connected, 
+                so users can move from the homepage to product information without the design feeling confusing or unfinished.</p>
+              <div class="feature-ribbon">
+                <span>Clear navigation</span>
+                <span>Product sections</span>
+                <span>Consistent branding</span>
+                <span>Responsive layout</span>
+              </div>
+            </div>
+          </div>
 
-                <div class="col-lg-6">
-                <div class="project-info-card">
-                    <h2>Key Features</h2>
-                    <ul class="project-detail-list">
-                    <li>Responsive page layout</li>
-                    <li>Modern navigation structure</li>
-                    <li>Consistent visual style</li>
-                    <li>Product and content sections</li>
-                    <li>Clean UI design</li>
-                    </ul>
-                </div>
-                </div>
+          <div class="diagonal-feature">
+            <div class="visual-stack reveal">
+              <div class="visual-card one"><img src="Images/GPUVortex/About.png" alt="GPU Vortex about page" onclick="openImageModal(this.src,this.alt)" loading="lazy" decoding="async"></div>
+              <div class="visual-card two"><img src="Images/GPUVortex/Products.png" alt="GPU Vortex products page" onclick="openImageModal(this.src,this.alt)" loading="lazy" decoding="async"></div>
+              <div class="visual-card three"><img src="Images/GPUVortex/Contact.png" alt="GPU Vortex contact page" onclick="openImageModal(this.src,this.alt)" loading="lazy" decoding="async"></div>
+            </div>
+            <div class="story-panel offset-right reveal">
+              <div class="story-kicker">Design direction</div>
+              <h2>Less classroom project, more digital storefront.</h2>
+              <p>The page design uses large screenshots, layered cards and floating notes to 
+                show the project in a more professional way. Instead of placing every explanation
+                in equal boxes, the content now moves like a portfolio case study with moments 
+                for context, features and visual evidence.</p>
+            </div>
+          </div>
+
+          <div class="process-timeline">
+            <div class="process-step reveal">
+              <div class="step-number">01</div>
+              <div class="process-card">
+                <h2>Structure</h2>
+                <p>I planned the website around important user actions: landing on the homepage, understanding the brand, viewing products and finding contact information.</p>
+              </div>
             </div>
 
-            <div class="project-info-card">
-                <h2>Design Process</h2>
-                <p>
-                The design process focused on creating a website that looks professional while remaining
-                simple to use. Attention was given to image placement, spacing, readability, and page
-                structure so that the final design feels clear and easy to follow.
-                </p>
+            <div class="process-step reveal">
+              <div class="step-number">02</div>
+              <div class="process-card">
+                <h2>Visual hierarchy</h2>
+                <p>Large images, short text blocks and clear section titles help the project feel easier to scan while still showing the design choices behind it.</p>
+              </div>
             </div>
-
-            <div class="project-gallery">
-                <h2 class="project-gallery-title">Project Screens</h2>
-
-                <div class="project-gallery-grid">
-                <img src="Images/GPUVortex/Home.png" alt="Home page" onclick="openImageModal(this.src, this.alt)">
-                <img src="Images/GPUVortex/About.png" alt="About page" onclick="openImageModal(this.src, this.alt)">
-                <img src="Images/GPUVortex/Products.png" alt="Products page" onclick="openImageModal(this.src, this.alt)">
-                <img src="Images/GPUVortex/Contact.png" alt="Contact page" onclick="openImageModal(this.src, this.alt)">
-                </div>
+            <div class="process-step reveal">
+              <div class="step-number">03</div>
+              <div class="process-card">
+                <h2>Interaction</h2>
+                <p>Clickable screenshots, hover motion and modal previews make the case study feel more interactive and suited to a digital interactive media portfolio.</p>
+              </div>
             </div>
-            <br>
-            <a href="index.html" class="back-link"><- Back to projects</a>
+          </div>
+
+          <div class="project-gallery reveal">
+            <div class="gallery-heading">
+              <div class="story-kicker">Project screens</div>
+              <h2>Final interface moments</h2>
+              <p>A mix of full-page views and supporting screens to show the website as one complete experience.</p>
+            </div>
+            <div class="project-gallery-grid">
+              <img src="Images/GPUVortex/Home.png" alt="GPU Vortex home page" onclick="openImageModal(this.src,this.alt)" loading="lazy" decoding="async">
+              <img src="Images/GPUVortex/About.png" alt="GPU Vortex about page" onclick="openImageModal(this.src,this.alt)" loading="lazy" decoding="async">
+              <img src="Images/GPUVortex/Products.png" alt="GPU Vortex products page" onclick="openImageModal(this.src,this.alt)" loading="lazy" decoding="async">
+              <img src="Images/GPUVortex/Contact.png" alt="GPU Vortex contact page" onclick="openImageModal(this.src,this.alt)" loading="lazy" decoding="async">
+            </div>
+          </div>
+
+          <div class="next-projects reveal">
+            <p><strong>Next project:</strong> See how I approached a mobile-first student app interface.</p>
+            <a href="mobileapp.html" class="back-link">View MCAST Mobile App →</a>
+          </div>
         </div>
-    </section>
+      </section>
+    </main>
 
     <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-xl">
+      <div class="modal-dialog modal-dialog-centered modal-xl">
         <div class="modal-content image-modal-content">
-            <button type="button" class="btn-close image-modal-close" data-bs-dismiss="modal" aria-label="Close"></button>
-
-            <div class="modal-body text-center">
+          <button type="button" class="btn-close image-modal-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <div class="modal-body text-center">
             <img id="modalImage" src="" alt="" class="modal-image">
-            </div>
+          </div>
         </div>
-        </div>
+      </div>
     </div>
 
+    <footer class="site-footer">
+      <div class="container footer-row">
+        <span>© 2026 Lee Mifsud - Portfolio</span>
+        <div class="footer-links">
+          <a href="index.html#projects">Projects</a>
+          <a href="about.html">About</a>
+          <a href="mailto:leemifsud01@gmail.com">Email</a>
+        </div>
+      </div>
+    </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
-    <script>
-        function openImageModal(imageSrc, imageAlt) {
-        const modalImage = document.getElementById("modalImage");
-        modalImage.src = imageSrc;
-        modalImage.alt = imageAlt;
-
-        const imageModal = new bootstrap.Modal(document.getElementById("imageModal"));
-        imageModal.show();
-        }
-    </script>
-
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script><script src="script.js"></script>
+  </body>
 </html>
